@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "VisionScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.vic",
+					"match": "\\b(Classify|Replace|Use|Load|Save|GetFPS|GetDistinctScenes|GetUniqueAppearances|Say|GetText|Camera|Greyscale|ShowText|Search|Deploy|GetEdges)\\b",
+					"captures": {
+						"1": {
+							"name": "support.function.vic"
+						}
+					}
+				},
+				{
+					"name": "keyword.nestedContexts.vic",
+					"begin": "\\b(UseCamera|If|In|Else|EndIf|EndIn|Endcamera)\\b",
+					"end": "\\b(EndIf|EndIn|Endcamera)\\b",
+					"captures": {
+						"1": {
+							"name": "keyword.control.vic"
+						}
+					}
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.vic",
+					"match": "#.*$"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.vic",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vic",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.vic",
+					"match": "\\b(\\d+(\\.\\d+)?)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.visionscript"
+}

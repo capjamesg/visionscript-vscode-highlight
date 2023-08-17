@@ -1,0 +1,23 @@
+{
+    "name": "VisionScript Theme",
+    "tokenColors": [
+        {
+            "scope": "keyword.control.vic",
+            "settings": {
+                "foreground": "#FF0000"
+            }
+        },
+        {
+            "scope": "keyword.nestedContexts.vic",
+            "settings": {
+                "foreground": "#FF00FF"
+            }
+        },
+        {
+            "scope": "comment",
+            "settings": {
+                "foreground": "#00FF00"
+            }
+        }
+    ]
+}

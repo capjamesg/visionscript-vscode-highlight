@@ -1,0 +1,34 @@
+{
+  "name": "visionscript",
+  "displayName": "VisionScript",
+  "description": "A VisionScript programming language syntax highter.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vic",
+        "aliases": [
+          "VisionScript",
+          "vic"
+        ],
+        "extensions": [
+          ".vic"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vic",
+        "scopeName": "source.visionscript",
+        "path": "./syntaxes/vic.tmLanguage.json"
+      }
+    ]
+  }
+}
