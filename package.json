@@ -9,6 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "main": "./extension.js",
   "contributes": {
     "languages": [
       {
@@ -23,6 +24,7 @@
         "configuration": "./language-configuration.json"
       }
     ],
+    "hoverProvider": true,
     "grammars": [
       {
         "language": "vic",
@@ -30,5 +32,8 @@
         "path": "./syntaxes/vic.tmLanguage.json"
       }
     ]
+  },
+  "dependencies": {
+    "front-matter": "^4.0.2"
   }
 }

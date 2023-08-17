@@ -2,19 +2,49 @@
     "name": "VisionScript Theme",
     "tokenColors": [
         {
-            "scope": "keyword.control.vic",
+            "scope": "keyword.inputs.vic",
             "settings": {
-                "foreground": "#FF0000"
+                "foreground": "#a2d2ff"
             }
         },
         {
-            "scope": "keyword.nestedContexts.vic",
+            "scope": "keyword.process.vic",
+            "settings": {
+                "foreground": "#cdb4db"
+            }
+        },
+        {
+            "scope": "keyword.find.vic",
+            "settings": {
+                "foreground": "#ccd5ae"
+            }
+        },
+        {
+            "scope": "keyword.output.vic",
+            "settings": {
+                "foreground": "#E6E6FA"
+            }
+        },
+        {
+            "scope": "keyword.logic.vic",
+            "settings": {
+                "foreground": "#ffdf6b"
+            }
+        },
+        {
+            "scope": "keyword.deploy.vic",
+            "settings": {
+                "foreground": "#fff"
+            }
+        },
+        {
+            "scope": "keyword.test.vic",
             "settings": {
                 "foreground": "#FF00FF"
             }
         },
         {
-            "scope": "comment",
+            "scope": "comment.vic",
             "settings": {
                 "foreground": "#00FF00"
             }

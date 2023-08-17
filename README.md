@@ -1,6 +1,6 @@
-# visionscript README
+# VisionScript Syntax Highlighting
 
-This is the README for your extension "visionscript". After writing up a brief description, we recommend including the following sections.
+This repository contains the official VisionScript syntax highlighting extension for use in Visual Studio Code.
 
 ## Features
 
