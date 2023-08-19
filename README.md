@@ -16,3 +16,7 @@ To install the extension:
 
 1. Visit the [VisionScript extension page](https://marketplace.visualstudio.com/items?itemName=VisionScript.visionscript) on the Visual Studio Code Marketplace.
 2. Click "Install"
+
+## License
+
+The source code in this repository is licensed under an [MIT license](LICENSE).
