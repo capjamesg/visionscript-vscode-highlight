@@ -14,7 +14,10 @@ fs.readdir('../../visionscript-docs/docs/', (err, files) => {
         // remove [] from title
         content.attributes.title = content.attributes.title.replace(/\[|\]/g, '');
 
-        reference[content.attributes.title] = body;
+        reference[content.attributes.title] = {
+            "body": body,
+            "signatures": content.attributes.signatures
+        }
     });
 
     fs.writeFile("./reference.json", JSON.stringify(reference), function(err) {

@@ -1,8 +1,8 @@
 {
   "name": "visionscript",
   "displayName": "VisionScript",
-  "description": "A VisionScript programming language syntax highter.",
-  "version": "0.0.1",
+  "description": "A VisionScript programming language syntax highlighter.",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -10,7 +10,21 @@
     "Programming Languages"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/capjamesg/visionscript-textmate-grammar"
+  },
+  "icon": "assets/logo.png",
+  "license": "MIT",
+  "publisher": "visionscript",
   "contributes": {
+    "themes": [
+      {
+        "label": "VisionScript",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vic.tmTheme.json"
+      }
+    ],
     "languages": [
       {
         "id": "vic",
@@ -33,7 +47,13 @@
       }
     ]
   },
+  "configurationDefaults": {
+    "visionscript": {
+      "editor.semanticHighlighting.enabled": true
+    }
+  },
   "dependencies": {
     "front-matter": "^4.0.2"
-  }
+  },
+  "pricing": "Free"
 }

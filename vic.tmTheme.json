@@ -1,52 +1,50 @@
 {
     "name": "VisionScript Theme",
-    "type": "dark",
     "tokenColors": [
         {
-            "name": "String Literal",
-            "scope": ["source.visionscript keyword.inputs.vic"],
+            "scope": ["keyword.control.import"],
             "settings": {
-                "foreground": "#FFC0CB"
+                "foreground": "#a2d2ff"
             }
         },
         {
-            "scope": "source.visionscript keyword.process.vic",
+            "scope": ["keyword"],
             "settings": {
                 "foreground": "#cdb4db"
             }
         },
         {
-            "scope": "source.visionscript keyword.find.vic",
+            "scope": ["find.vic"],
             "settings": {
                 "foreground": "#ccd5ae"
             }
         },
         {
-            "scope": "source.visionscript keyword.output.vic",
+            "scope": ["output.vic"],
             "settings": {
                 "foreground": "#E6E6FA"
             }
         },
         {
-            "scope": "source.visionscript keyword.logic.vic",
+            "scope": ["logic.vic"],
             "settings": {
                 "foreground": "#ffdf6b"
             }
         },
         {
-            "scope": "source.visionscript keyword.deploy.vic",
+            "scope": ["deploy.vic"],
             "settings": {
                 "foreground": "#fff"
             }
         },
         {
-            "scope": "source.visionscript keyword.test.vic",
+            "scope": ["test.vic"],
             "settings": {
                 "foreground": "#FF00FF"
             }
         },
         {
-            "scope": "comment.vic",
+            "scope": ["source comment.vic"],
             "settings": {
                 "foreground": "#00FF00"
             }
